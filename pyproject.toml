@@ -5,9 +5,9 @@ build-backend = "flit_core.buildapi"
 [tool.flit.metadata]
 module = "fastapi_jwt_auth"
 dist-name = "fastapi-jwt-auth"
-author = "Nyoman Pradipta Dewantara"
-author-email = "nyomanpradipta120@gmail.com"
-home-page = "https://github.com/IndominusByte/fastapi-jwt-auth"
+author = "Marek Sybilak"
+author-email = "marek.sybilak@gmail.com"
+home-page = "https://github.com/mareksybilak/fastapi-jwt-auth"
 
 classifiers = [
   "Environment :: Web Environment",
@@ -16,6 +16,8 @@ classifiers = [
   "Programming Language :: Python :: 3.6",
   "Programming Language :: Python :: 3.7",
   "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
   "License :: OSI Approved :: MIT License",
   "Operating System :: OS Independent",
   "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
@@ -23,15 +25,16 @@ classifiers = [
 ]
 
 requires = [
-  "fastapi>=0.61.0",
-  "PyJWT>=1.7.1,<2.0.0"
+  "httpx>=0.23.0",
+  "fastapi>=0.88.0",
+  "PyJWT>=2.5.0,<3.0.0"
 ]
 
 description-file = "README.md"
 requires-python = ">=3.6"
 
 [tool.flit.metadata.urls]
-Documentation = "https://indominusbyte.github.io/fastapi-jwt-auth/"
+Documentation = "https://github.com/mareksybilak/fastapi-jwt-auth/"
 
 [tool.flit.metadata.requires-extra]
 test = [
@@ -47,8 +50,8 @@ doc = [
 ]
 
 dev = [
-  "cryptography>=2.6,<4.0.0",
-  "uvicorn>=0.11.5,<0.12.0"
+  "cryptography>=38.0.0,<40.0.0",
+  "uvicorn>=0.20.0,<0.30.0"
 ]
 
-asymmetric = ["cryptography>=2.6,<4.0.0"]
+asymmetric = ["cryptography>=38.0.0,<40.0.0"]
