@@ -1,4 +1,4 @@
-site_name: FastAPI JWT Auth
+site_name: FastAPI JWT Auth 2
 site_description: FastAPI extension that provides JWT Auth support (secure, easy to use, and lightweight)
 theme:
   name: material
