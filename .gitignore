@@ -1,4 +1,4 @@
-# dotenv
+git l# dotenv
 .env
 
 # virtualenv
@@ -27,6 +27,9 @@ var/
 .installed.cfg
 *.egg
 .pytest_cache
+
+#ide
+.idea
 
 # coverage
 .coverage
